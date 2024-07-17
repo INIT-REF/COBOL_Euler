@@ -3,9 +3,9 @@
        
        DATA DIVISION.
        WORKING-STORAGE SECTION.
-       01  f1  PIC 9(7)    VALUE 1.
-       01  f2  PIC 9(7)    VALUE 2.
-       01  res PIC 9(10)   VALUE 0.
+       01  f1  PIC 9(7)    COMP    VALUE 1.
+       01  f2  PIC 9(7)    COMP    VALUE 2.
+       01  res PIC 9(10)   COMP    VALUE 0.
        01  out PIC Z(10).
 
        PROCEDURE DIVISION.

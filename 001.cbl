@@ -3,8 +3,8 @@
        
        DATA DIVISION.
        WORKING-STORAGE SECTION.
-       01  n   PIC 9(4).
-       01  res PIC 9(10)   VALUE 0.
+       01  n   PIC 9(4)    COMP.
+       01  res PIC 9(10)   COMP    VALUE 0.
        01  out PIC Z(10).
 
        PROCEDURE DIVISION.
