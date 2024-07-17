@@ -8,7 +8,7 @@
        01  out PIC Z(10).
 
        PROCEDURE DIVISION.
-           PERFORM VARYING n FROM 1 UNTIL n = 1000
+           PERFORM VARYING n FROM 1 BY 1 UNTIL n = 1000
                IF FUNCTION MOD (n, 3) * FUNCTION MOD (n, 5) = 0
                    ADD n TO res
            END-PERFORM

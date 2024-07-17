@@ -15,7 +15,7 @@
                END-IF
 
                ADD f1 to f2
-               COMPUTE f1 = f2 - f1
+               SUBTRACT f1 FROM f2 GIVING f1
            END-PERFORM
 
            MOVE res TO out
