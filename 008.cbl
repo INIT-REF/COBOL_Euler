@@ -7,7 +7,6 @@
        01  sub PIC 9(13)   COMP.
        01  prd PIC 9(18)   COMP.
        01  rem PIC 9       COMP.
-       01  res PIC 9(18)   COMP    VALUE 0.
        01  max PIC 9(18)           VALUE 0.
        01  out PIC Z(18).
        01  str PIC X(1000)         VALUE
@@ -39,7 +38,7 @@
 
                PERFORM UNTIL sub = 0
                    DIVIDE sub BY 10 GIVING sub REMAINDER rem
-                   MULTIPLY prd BY rem GIVING prd
+                   MULTIPLY rem BY prd
                END-PERFORM
 
                IF prd > max

@@ -10,7 +10,7 @@
        PROCEDURE DIVISION.
            PERFORM UNTIL n = 1
                IF FUNCTION MOD (n, d) = 0
-                   DIVIDE n BY d giving n
+                   DIVIDE n BY d GIVING n
                ELSE
                    ADD 2 to d
            END-PERFORM
