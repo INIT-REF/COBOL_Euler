@@ -8,13 +8,13 @@
        01 tmp      PIC 9(18)   COMP.
        01 res      PIC 9(4)    COMP    VALUE 0.
        01 f1.
-           05 fib1 PIC 9(10)    COMP   VALUE 0 OCCURS 100 TIMES 
+           05 fib1 PIC 9(10)   COMP   VALUE 0 OCCURS 100 TIMES 
                                        INDEXED BY i.
        01 f2.
-           05 fib2 PIC 9(10)    COMP   VALUE 0 OCCURS 100 TIMES 
+           05 fib2 PIC 9(10)   COMP   VALUE 0 OCCURS 100 TIMES 
                                        INDEXED BY j.
        01 ftmp.
-           05 ft   PIC 9(10)    COMP   OCCURS 100 TIMES.
+           05 ft   PIC 9(10)   COMP   OCCURS 100 TIMES.
        01 out      PIC Z(10).
 
        PROCEDURE DIVISION.
