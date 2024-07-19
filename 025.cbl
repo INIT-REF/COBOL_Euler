@@ -5,7 +5,7 @@
        WORKING-STORAGE SECTION.
        01 n        PIC 9(4)    COMP    VALUE 2.
        01 carry    PIC 9(10)   COMP    VALUE 0.
-       01 tmp      PIC 9(18)   COMP.
+       01 tmp      PIC 9(12)   COMP.
        01 f1.
            05 fib1 PIC 9(10)   COMP   VALUE 0 OCCURS 100 TIMES 
                                        INDEXED BY i.
