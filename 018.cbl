@@ -3,10 +3,9 @@
        
        DATA DIVISION.
        WORKING-STORAGE SECTION.
-       01  n   PIC 9(3)    COMP.
+       01  n   PIC 9(3)    COMP    VALUE 1.
        01  rw  PIC 9(2)    COMP.
        01  cl  PIC 9(2)    COMP.
-       01  sub PIC 9(13)   COMP.
        01  out PIC Z(18).
        01  str PIC X(364)          VALUE
            "75 95 64 17 47 82 18 35 87 10 20 04 82 47 65 19 01 23 75 03
@@ -19,11 +18,9 @@
            05 tvals PIC 9(4) COMP OCCURS 120 TIMES INDEXED BY i.
 
        PROCEDURE DIVISION.
-           SET i to 1
-
-           PERFORM VARYING n FROM 1 BY 3 UNTIL i > 120
-               MOVE FUNCTION NUMVAL(str(n:2)) TO tvals(i)
-               SET i UP BY 1
+           PERFORM VARYING i FROM 1 BY 1 UNTIL i > 120
+               UNSTRING str DELIMITED BY SPACE
+               INTO tvals(i) WITH POINTER n
            END-PERFORM
 
            PERFORM WITH TEST AFTER VARYING rw FROM 13 BY -1 UNTIL rw = 0
