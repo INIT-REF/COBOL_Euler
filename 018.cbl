@@ -1,5 +1,5 @@
        IDENTIFICATION DIVISION.
-       PROGRAM-ID. Euler001.
+       PROGRAM-ID. Euler018.
        
        DATA DIVISION.
        WORKING-STORAGE SECTION.
